@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"golearn/grpctest/proto"
+	"goshop/golearn/grpctest/proto"
 	"net"
 
 	"google.golang.org/grpc"

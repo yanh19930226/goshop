@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"golearn/stream_grpc_test/proto"
+	"goshop/golearn/stream_grpc_test/proto"
 	"sync"
 	"time"
 

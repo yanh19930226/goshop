@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"golearn/grpctest/proto"
+	"goshop/golearn/grpc_token_auth_test/proto"
 	"net"
 
 	"google.golang.org/grpc/codes"

@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"golearn/metadata_test/proto"
+	"goshop/golearn/metadata_test/proto"
 	"net"
 
 	"google.golang.org/grpc/metadata"

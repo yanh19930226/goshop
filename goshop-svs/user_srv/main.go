@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goshop-svc/model"
+	"goshop/goshop-svs/user_srv/model"
 	"log"
 	"os"
 	"time"
@@ -13,14 +13,16 @@ import (
 )
 
 func main() {
-	dsn := "root:root@tcp(192.168.124.51:3306)/mxshop_user_srv?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:66^^66@tcp(121.43.34.54:3306)/chat?charset=utf8mb4&parseTime=True&loc=Local"
 
 	newLogger := logger.New(
 		log.New(os.Stdout, "\r\n", log.LstdFlags), // io writer
 		logger.Config{
-			SlowThreshold: time.Second, // 慢 SQL 阈值
-			LogLevel:      logger.Info, // Log level
-			Colorful:      true,        // 禁用彩色打印
+			SlowThreshold:             time.Second, // Slow SQL threshold
+			LogLevel:                  logger.Info, // Log level
+			IgnoreRecordNotFoundError: true,        // Ignore ErrRecordNotFound error for logger
+			ParameterizedQueries:      true,        // Don't include params in the SQL log
+			Colorful:                  true,        // Disable color
 		},
 	)
 

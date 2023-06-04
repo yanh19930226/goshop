@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"gin_test/proto"
+	"goshop/golearn/gin_test/proto"
 	"net/http"
 	"reflect"
 	"strings"
@@ -45,6 +45,7 @@ func main() {
 
 	// //实例化一个gin的server对象
 	r := gin.Default()
+
 	r.Static("/static", "./static")
 	r.LoadHTMLGlob("templates/**/*")
 

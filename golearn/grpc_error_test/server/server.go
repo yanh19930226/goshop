@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"golearn/grpctest/proto"
+	"goshop/golearn/grpc_error_test/proto"
 	"net"
 	"time"
 
